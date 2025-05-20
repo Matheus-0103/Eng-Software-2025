@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Victor Moura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700|Merriweather:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      background-color: #fff;
+      color: #111;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / Top Section -->
+  <header class="hero">
+    <h1 class="w3-xxlarge w3-text-orange">Victor Moura</h1>
+    <p class="w3-large">Advogado • Corretor de Imóveis • Consultor de Consórcios</p>
+  </header>
+
+  <!-- Slideshow (Apple-style visual highlight) -->
+  <section class="w3-content w3-display-container" style="max-width:1000px">
+    <img class="mySlides" src="https://www.w3schools.com/w3images/livingroom.jpg" style="width:100%">
+    <img class="mySlides" src="https://media.gazetadopovo.com.br/2022/10/10145418/ademicon-1-960x540.jpg" style="width:100%">
+    <img class="mySlides" src="https://www.w3schools.com/w3images/bedroom.jpg" style="width:100%">
+    <img class="mySlides" src="https://www.w3schools.com/w3images/livingroom2.jpg" style="width:100%">
+  </section>
+
+  <!-- Serviços -->
+  <section class="section w3-center">
+    <h2 class="w3-xlarge">Serviços</h2>
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third w3-padding">
+        <p><strong>Montagna Imóveis</strong></p>
+        <p>Venda, locação e assessoria completa.</p>
+      </div>
+      <div class="w3-third w3-padding">
+        <p><strong>Consultoria Ademicon</strong></p>
+        <p>Planejamento seguro com consórcios.</p>
+      </div>
+      <div class="w3-third w3-padding">
+        <p><strong>Advocacia Criminal</strong></p>
+        <p>Atuação estratégica e defesa especializada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section">
+    <h2 class="w3-center w3-xlarge">Sobre Victor Moura</h2>
+    <p class="w3-large w3-center" style="max-width: 800px; margin: auto;">
+      Victor Claudio Moura é advogado criminalista com ampla experiência no Direito Penal. Atua também como corretor de imóveis registrado no CRECI, garantindo segurança jurídica nas transações. É fundador da Montagna Imóveis e consultor da Ademicon, ajudando clientes a conquistarem bens de forma planejada. Sua atuação une conhecimento jurídico, visão estratégica e compromisso com resultados.
+    </p>
+  </section>
+
+  <!-- Contato -->
+  <section class="section w3-light-grey" id="contato">
+    <h2 class="w3-center w3-xlarge">Contato</h2>
+    <div class="w3-center w3-margin-bottom">
+      <p><i class="fa fa-map-marker"></i> Maringá, PR</p>
+      <p><i class="fa fa-phone"></i> +55 (44) 99180-5312</p>
+      <p><i class="fa fa-envelope"></i> contato.victormoura@gmail.com</p>
+    </div>
+    <form class="w3-container w3-padding-large w3-white w3-card-4" action="/action_page.php" target="_blank" style="max-width:600px;margin:auto;">
+      <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+      <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+      <p><button class="w3-button w3-orange w3-round-large" type="submit">Enviar Mensagem</button></p>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Feito por <a href="#" class="w3-hover-text-orange">Matheus Murbach e Arthur Claudio</a></p>
+  </footer>
+
+  <script>
+    // Slideshow
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 4000); // Muda a imagem a cada 4 segundos
+    }
+  </script>
+
+</body>
