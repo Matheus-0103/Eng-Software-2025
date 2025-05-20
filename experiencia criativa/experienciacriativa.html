@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teatro Online - Um Espetáculo de Emoções</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1b1b1b;
+    color: #f1f1f1;
+    line-height: 1.6;
+  }
+  a {
+    color: #e63946;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover,
+  a:focus {
+    color: #f1faee;
+    outline: none;
+  }
+
+  /* Header and Menu */
+  header {
+    background: #222;
+    padding: 20px 30px;
+    border-bottom: 3px solid #e63946;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  nav a:hover,
+  nav a:focus {
+    background: #e63946;
+    color: #1b1b1b;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    background-color: rgba(22, 22, 22, 0.75);
+    padding: 20px 40px;
+    border-radius: 12px;
+    color: #f1faee;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  }
+
+  /* Sections */
+  section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #282828;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  }
+  section h2 {
+    color: #f1faee;
+    border-bottom: 2px solid #e63946;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  /* Paragraphs */
+  p {
+    font-size: 1.1rem;
+    color: #d8d8d8;
+    margin-bottom: 16px;
+  }
+
+  /* Images */
+  .section-imagens img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px 15px 10px 0;
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.6);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .section-imagens img:hover {
+    transform: scale(1.05) rotate(2deg);
+  }
+  .section-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  /* Lists */
+  ul, ol {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    padding-left: 25px;
+    margin-bottom: 16px;
+  }
+  ul li, ol li {
+    margin-bottom: 8px;
+  }
+
+  /* Footer */
+  footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 2px solid #e63946;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      padding: 15px 25px;
+    }
+    .section-imagens img {
+      max-width: 90vw;
+      margin: 10px auto;
+      display: block;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav aria-label="Menu principal do site de teatro">
+    <a href="#paragrafos" tabindex="0">Parágrafos</a>
+    <a href="#imagens" tabindex="0">Imagens</a>
+    <a href="#sessoes" tabindex="0">Sessões</a>
+    <a href="#links" tabindex="0">Links</a>
+    <a href="#listas" tabindex="0">Listas</a>
+    <a href="#menus" tabindex="0">Menus</a>
+  </nav>
+</header>
+
+<div class="hero" role="img" aria-label="Cortina vermelha aberta em um teatro iluminado">
+  <h1>Teatro Online - Um Espetáculo de Emoções</h1>
+</div>
+
+<section id="paragrafos" role="region" aria-labelledby="titulo-paragrafos">
+  <h2 id="titulo-paragrafos">Parágrafos - A Magia das Palavras</h2>
+  <p>O teatro é um espaço onde as palavras ganham vida, a emoção encontra expressão e a imaginação se liberta. Cada texto e cada fala preenchem o cenário de significado para emocionar o público.</p>
+  <p>Nas cortinas levantadas, cada gesto e cada silêncio atuam como um poderoso parágrafo, construindo narrativas únicas e memoráveis.</p>
+</section>
+
+<section id="imagens" class="section-imagens" role="region" aria-labelledby="titulo-imagens">
+  <h2 id="titulo-imagens">Imagens - Cenários que Contam Histórias</h2>
+  <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=400&q=80" alt="Palco de teatro com iluminação vermelha dramática" />
+  <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=400&q=80" alt="Máscaras clássicas de teatro, tragédia e comédia" />
+  <img src="https://images.unsplash.com/photo-1487530811176-3780de880c93?auto=format&fit=crop&w=400&q=80" alt="Ator em pose dramática sob spot de luz azul" />
+</section>
+
+<section id="sessoes" role="region" aria-labelledby="titulo-sessoes">
+  <h2 id="titulo-sessoes">Sessões - Dividindo o Espetáculo</h2>
+  <p>O espetáculo é organizado em sessões que facilitam a experiência do público, que pode escolher disfrutar de diferentes gêneros e formas de dramaturgia.</p>
+  <p>Normalmente, uma sessão inclui apresentações, intervalos e, às vezes, debates para aprofundar o entendimento da obra.</p>
+</section>
+
+<section id="links" role="region" aria-labelledby="titulo-links">
+  <h2 id="titulo-links">Links Úteis</h2>
+  <p>Para quem deseja se aprofundar no mundo do teatro, aqui estão alguns links interessantes:</p>
+  <ul>
+    <li><a href="https://pt.wikipedia.org/wiki/Teatro" target="_blank" rel="noopener">História do Teatro - Wikipédia</a></li>
+    <li><a href="https://www.sesc.com.br/" target="_blank" rel="noopener">SESC - Programação Cultural e Teatral</a></li>
+    <li><a href="https://www.culturabrasil.com.br/teatro" target="_blank" rel="noopener">Cultura Brasil - Seção Teatro</a></li>
+  </ul>
+</section>
+
+<section id="listas" role="region" aria-labelledby="titulo-listas">
+  <h2 id="titulo-listas">Listas - Tipos de teatro</h2>
+  <p>A arte teatral pode ser classificada em diversos estilos e formatos, entre eles:</p>
+  <ol>
+    <li>Teatro Clássico</li>
+    <li>Teatro Moderno</li>
+    <li>Teatro Experimental</li>
+    <li>Musical</li>
+    <li>Teatro de Rua</li>
+    <li>Improvisação</li>
+  </ol>
+</section>
+
+<section id="menus" role="region" aria-labelledby="titulo-menus">
+  <h2 id="titulo-menus">Menus - Navegue pela peça</h2>
+  <p>Menus bem estruturados ajudam a navegar pelo conteúdo, por exemplo os temas principais de uma peça:</p>
+  <ul>
+    <li><a href="#paragrafos">Texto e Diálogo</a></li>
+    <li><a href="#imagens">Cenografia</a></li>
+    <li><a href="#sessoes">Organização</a></li>
+    <li><a href="#links">Referências</a></li>
+    <li><a href="#listas">Gêneros</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2024 Teatro Online - Um Espetáculo para todos</p>
+</footer>
+</body>
+</html>
+
